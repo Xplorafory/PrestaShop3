@@ -17,6 +17,7 @@ public class BaseClass {
 
     @BeforeAll
     public static void setUp() {
+        System.setProperty("webdriver.chrome.driver","C:\\WebDriver\\bin\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://formy-project.herokuapp.com/form");
         driver.manage().window().maximize();
